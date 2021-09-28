@@ -8,6 +8,8 @@ dl, dd, ol, ul, figure {
   padding: 0;
 }
 
+
+
 /**
  * Basic styling
  */
@@ -17,11 +19,16 @@ body {
   background-color: $background-color;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
-  -moz-font-feature-settings: "kern" 1;
-  -o-font-feature-settings: "kern" 1;
-  font-feature-settings: "kern" 1;
+     -moz-font-feature-settings: "kern" 1;
+       -o-font-feature-settings: "kern" 1;
+          font-feature-settings: "kern" 1;
   font-kerning: normal;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
+
+
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -33,12 +40,16 @@ ul, ol, dl, figure,
   margin-bottom: $spacing-unit / 2;
 }
 
+
+
 /**
  * `main` element
  */
 main {
   display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
 }
+
+
 
 /**
  * Images
@@ -47,6 +58,8 @@ img {
   max-width: 100%;
   vertical-align: middle;
 }
+
+
 
 /**
  * Figures
@@ -58,6 +71,8 @@ figure > img {
 figcaption {
   font-size: $small-font-size;
 }
+
+
 
 /**
  * Lists
@@ -73,12 +88,16 @@ li {
   }
 }
 
+
+
 /**
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
   font-weight: $base-font-weight;
 }
+
+
 
 /**
  * Links
@@ -105,6 +124,7 @@ a {
   }
 }
 
+
 /**
  * Blockquotes
  */
@@ -120,6 +140,8 @@ blockquote {
     margin-bottom: 0;
   }
 }
+
+
 
 /**
  * Code formatting
@@ -147,12 +169,14 @@ pre {
   }
 }
 
+
+
 /**
  * Wrapper
  */
 .wrapper {
   max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-  max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
+  max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
   margin-right: auto;
   margin-left: auto;
   padding-right: $spacing-unit;
@@ -161,11 +185,13 @@ pre {
 
   @include media-query($on-laptop) {
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-    max-width: calc(#{$content-width} - (#{$spacing-unit}));
+    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
     padding-right: $spacing-unit / 2;
     padding-left: $spacing-unit / 2;
   }
 }
+
+
 
 /**
  * Clearfix
@@ -176,17 +202,19 @@ pre {
   clear: both;
 }
 
+
+
 /**
  * Icons
  */
 
 .svg-icon {
-  width: 16px;
-  height: 16px;
-  display: inline-block;
-  fill: #{$grey-color};
-  padding-right: 5px;
-  vertical-align: text-top;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    fill: #{$grey-color};
+    padding-right: 5px;
+    vertical-align: text-top;
 }
 
 .social-media-list {
@@ -194,6 +222,8 @@ pre {
     padding-top: 5px;
   }
 }
+
+
 
 /**
  * Tables
